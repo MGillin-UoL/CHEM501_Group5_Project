@@ -6,10 +6,13 @@ The project investigates the temperature and air quality fluctuations in an offi
 
 This repository contains three sets of code:
 - CHEM501_Nicla_Project_Code.ino
+
   C++ code which connects the Nicla Sense ME to the MKR WiFi 1010 via an ESLOV cable.
 - CHEM501_MKR_Project_Code.ino
+
   C++ code which codes the functionality of the Nicla Sense ME, such as how many measurements to obtain using which sensor.
 - CHEM501_MQTT_Project_Code.py
+
   A minimal piece of Python code for reading messages via MQTT (Message Queuing Telemetry Transport).
 
 # Prerequisites
