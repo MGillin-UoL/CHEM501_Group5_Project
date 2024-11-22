@@ -9,7 +9,7 @@ This repository contains three sets of code:
   C++ code which connects the Nicla Sense ME to the MKR WiFi 1010 via an ESLOV cable.
 - CHEM501_MKR_Project_Code.ino
   C++ code which codes the functionality of the Nicla Sense ME, such as how many measurements to obtain using which sensor.
-- CHEM501_Project_Code.py
+- CHEM501_MQTT_Project_Code.py
   A minimal piece of Python code for reading messages via MQTT (Message Queuing Telemetry Transport).
 
 # Prerequisites
