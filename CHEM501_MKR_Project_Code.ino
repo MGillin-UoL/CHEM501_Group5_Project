@@ -27,9 +27,9 @@ Sensor gas(SENSOR_ID_GAS);
 void setup() { 
    //Initialize serial and wait for port to open:
   Serial.begin(115200);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
-  }
+//  while (!Serial) {
+//    ; // wait for serial port to connect. Needed for native USB port only
+//  }
 
   // attempt to connect to Wifi network:
   Serial.print("Attempting to connect to WPA SSID: ");
