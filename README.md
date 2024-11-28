@@ -2,7 +2,7 @@
 This GitHub repository contains the code used in a research project for CHEM501 - Digital Alchemy: Synthesising Code and Chemistry at the University of Liverpool.
 
 # Description
-The project investigates the temperature and air quality fluctuations in an office in the Department of Chemistry building at the University of Liverpool. This room is used as an office and 3D-printing suite, but also contains a PerkinElmer Spectrum 100 FT-IR Spectrometer with an ATR Sampling Accessory and an PerkinElmer Lambda 25 UV-Vis Spectrophotometer. To investigate these fluctuations, three identical setups were used containing an Arduino Nicla Sense ME, an Arduino MKR WiFi 1010, and an Ansmann 10.000 mAh powerbank. This project primarily utilised the functionality of the BME688 - Digital low power gas, pressure, temperature & humidity sensor with AI.
+The project investigates the temperature and air quality fluctuations in an office in the Department of Chemistry building at the University of Liverpool. This room is used as an office and 3D-printing suite, but also contains a PerkinElmer Spectrum 100 FT-IR Spectrometer with an ATR Sampling Accessory and an PerkinElmer Lambda 25 UV-Vis Spectrophotometer. To investigate these fluctuations, three identical setups were used containing an Arduino Nicla Sense ME, an Arduino MKR WiFi 1010, and an Ansmann 10.000 mAh powerbank (PB212). This project primarily utilised the functionality of the BME688 - Digital low power gas, pressure, temperature & humidity sensor with AI.
 
 This repository contains three sets of code:
 - CHEM501_Nicla_Project_Code.ino
@@ -16,8 +16,39 @@ This repository contains three sets of code:
   A minimal piece of Python code for reading messages via MQTT (Message Queuing Telemetry Transport).
 
 # Prerequisites
+The following software is required to run the code and acquire the appropriate data:
+- Visual Studio Code (or other code editor) - https://code.visualstudio.com/download
+- Arduino IDE - https://www.arduino.cc/en/software
+- Python (Anaconda is recommended. To install, click "Free Download using the URL") - https://www.anaconda.com/
+
+The following pieces of equipment are also required:
+- Arduino Nicla Sense ME - https://store.arduino.cc/products/nicla-sense-me
+- Arduino MKR WiFi 1010 - https://store.arduino.cc/products/arduino-mkr-wifi-1010
+- Powerbank (we recommend an Ansmann 10.000 mAh powerbank (PB212)) - https://shop.ansmann.de/en/powerbank-10000-pb212
 
 # Installation
+If using Anaconda, the pyserial module must be installed.
+If using Windows:
+1. Open Anaconda Prompt
+2. Type "conda install pyserial"
+3. Press "Enter"
+
+If using iOS on a Mac:
+1. Open Terminal
+2. Type "conda install pyserial"
+3. Press "Enter"
+
+
+Next, open Arduino IDE and navigate to Tools --> Board --> Board Manager and install the following:
+- Aruino Mbed OS Nicla Boards
+- Arduino SAMD Boards
+
+Finally, in the Arduino IDE, navigate to Tools --> Manage Libraries, and install the following:
+- Arduino_BHY2
+- ArduinoBLE
+- Arduino_BHY2Host
+- WiFiNina
+- ArduinoMqttClient
 
 # Authors
 If you have any questions or would like additional information, please contact:
