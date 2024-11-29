@@ -33,7 +33,7 @@ If using Windows:
 2. Type "conda install pyserial"
 3. Press "Enter"
 
-If using iOS on a Mac:
+If using macOS:
 1. Open Terminal
 2. Type "conda install pyserial"
 3. Press "Enter"
