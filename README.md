@@ -4,7 +4,7 @@ This GitHub repository contains the code used in a research project for CHEM501 
 ## Description
 The project investigates the temperature and air quality fluctuations in an office in the Department of Chemistry building at the University of Liverpool. This room is used as an office and 3D-printing suite, but also contains a PerkinElmer Spectrum 100 FT-IR Spectrometer with an ATR Sampling Accessory and an PerkinElmer Lambda 25 UV-Vis Spectrophotometer. To investigate these fluctuations, three identical setups were used containing an Arduino Nicla Sense ME, an Arduino MKR WiFi 1010, and an Ansmann 10.000 mAh powerbank (PB212). This project primarily utilised the functionality of the BME688 - Digital low power gas, pressure, temperature & humidity sensor with AI.
 
-This repository contains three sets of code:
+This repository contains four sets of code:
 - CHEM501_Nicla_Project_Code.ino
 
   C++ code which connects the Nicla Sense ME to the MKR WiFi 1010 via an ESLOV cable.
@@ -14,7 +14,9 @@ This repository contains three sets of code:
 - CHEM501_MQTT_Project_Code.py
 
   A minimal piece of Python code for reading messages via MQTT (Message Queuing Telemetry Transport).
+- Project Data Visualisation.py
 
+  Python code which converts the data read from a csv file into a graph.
 ## Prerequisites
 The following software is required to run the code and acquire the appropriate data:
 - Visual Studio Code (or other code editor) - https://code.visualstudio.com/download
