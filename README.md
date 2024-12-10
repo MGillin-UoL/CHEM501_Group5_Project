@@ -52,6 +52,11 @@ Finally, in the Arduino IDE, navigate to Tools --> Manage Libraries, and install
 - WiFiNina
 - ArduinoMqttClient
 
+## Usage
+Below is a set of instructions for collecting data using the hardware listed before and the code provided.
+
+1. z
+
 ## Authors
 If you have any questions or would like additional information, please contact:
 - Marion Ridgway (sgmridgw@liverpool.ac.uk)
