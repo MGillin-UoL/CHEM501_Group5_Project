@@ -55,7 +55,15 @@ Finally, in the Arduino IDE, navigate to Tools --> Manage Libraries, and install
 ## Usage
 Below is a set of instructions for collecting data using the hardware listed before and the code provided.
 
-1. z
+1. Connect the Arduino Nicla Sense ME to your computer via a USB-A to micro USB.
+2. Run CHEM501_Nicla_Project_Code.ino in Arduino IDE. This "tells" the Nicla to "listen" to the MKR.
+3. Connect the Arduino Nicla Sense ME to the Arduino MKR WiFi 1010 via an ESLOV cable.
+4. Connect the Arduino MKR WiFi 1010 to your computer via a USB-A to micro USB.
+5. Run CHEM501_MKR_Project_Code.ino in Arduino IDE. This "tells" the MKR to start collecting temperature and gas measurements.
+6. Run CHEM501_MQTT_Project_Code.py in a code editor. This will convert the data readings to csv and db files.
+7. Disconnect the Arduino MKR WiFi 1010 from your computer and connect it to a powerbank. This will now run remotely.
+8. Once the desired number of readings has been obtained, stop the CHEM501_MQTT_Project_Code.py code.
+9. Run Project Data Visualisation.py. This will convert your numerical data into three graphs.
 
 ## Authors
 If you have any questions or would like additional information, please contact:
